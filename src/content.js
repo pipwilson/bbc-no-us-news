@@ -37,10 +37,8 @@ function findSpecificLiElements() {
     });
 }
 
-
 function runAfterLoad() {
-    // setTimeout(findSpecificLiElements, 1000); // Wait for 1 second before running the function
-    findSpecificLiElements();
+    setTimeout(findSpecificLiElements, 2000); // Wait before running the function
 }
 
 if (document.readyState !== 'complete') {
